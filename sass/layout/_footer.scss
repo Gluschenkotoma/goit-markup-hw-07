@@ -4,44 +4,17 @@
   margin-right: auto;
   background-color: #2f303a;
 }
-.footer > .conteiner {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-.parts {
+
+.footer-conteiner {
   display: flex;
   flex-wrap: wrap;
 }
-.part {
-  flex-basis: calc(100% / 4 - var(--card-set-gap));
-}
-.parts > .part + .part {
+.footer-conteiner > .footer-conteiner__part + .footer-conteiner__part {
   margin-left: var(--card-set-gap);
 }
-.network-list-footer {
-  display: flex;
-  background-color: inherit;
-  color: var(--title-text-color);
-}
-.network-list-footer > .network-list-item + .network-list-item {
-  margin-left: 10px;
-}
-.network-footer {
-  display: flex;
 
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  width: 44px;
-  height: 44px;
-
-  border-radius: 50%;
-
-  transition: background-color var(--transit-time) var(--timing);
-}
-.network-footer:hover,
-.network-footer:focus {
-  background-color: var(--accent-text-color);
+.footer-conteiner__part {
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
 }
 
 .address {
@@ -50,25 +23,44 @@
   line-height: 1.7;
   font-style: inherit;
 }
-.address-item:not(:last-child) {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.contacts-footer {
+.address__link {
   color: var(--adress-text);
   transition: color var(--transit-time) var(--timing);
 }
-.contacts-footer:hover,
-.contacts-footer:focus {
+.address__link:hover,
+.address__link:focus {
   color: var(--accent-text-color);
 }
-.logo-studio {
+
+.network-list-footer {
+  display: flex;
+  background-color: inherit;
   color: var(--title-text-color);
+  & > .network-list-footer__item + .network-list-footer__item {
+    margin-left: 10px;
+  }
 }
-.part .title {
-  color: var(--title-text-color);
-  margin-bottom: 20px;
+
+.network-list-footer__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color var(--transit-time) var(--timing);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+  }
 }
+
 /* footer form */
 .footer-form {
   display: block;
