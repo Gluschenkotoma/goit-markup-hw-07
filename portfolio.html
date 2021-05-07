@@ -14,42 +14,52 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
   <body>
-    <header class="page-header line">
-      <div class="conteiner line header-conteiner">
+    <!-- header -->
+    <header class="header line">
+      <div class="conteiner header-conteiner">
         <!-- logo -->
-        <a href="./" class="logo">Web<span class="studio">studio</span></a>
-        <!-- навигация -->
-        <nav class="nav">
-          <ul class="site-nav list">
-            <li class="item">
-              <a href="./index.html" class="link current-link">Студия</a>
-            </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link current current-link"
-                >Портфолио</a
+        <a href="./" class="logo"
+          >Web<span class="logo-accent-text">studio</span></a
+        >
+        <!-- nav -->
+        <nav class="site-nav">
+          <ul class="site-nav-menu list">
+            <li class="site-nav-item">
+              <a
+                href="./index.html"
+                class="link site-nav-link current current-link"
+                >Студия</a
               >
             </li>
-            <li class="item">
-              <a href="" class="link current-link">Контакты</a>
+            <li class="site-nav-item">
+              <a
+                href="./portfolio.html"
+                class="link site-nav-link current-link"
+              >
+                Портфолио</a
+              >
+            </li>
+            <li class="site-nav-item">
+              <a href="" class="link site-nav-link current-link">Контакты</a>
             </li>
           </ul>
         </nav>
-
-        <ul class="contact-header list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link contact">
-              <svg class="contact-icon" width="16px" height="12px">
+        <!-- contacts -->
+        <ul class="contact-menu list">
+          <li class="contact-menu-item">
+            <a href="mailto:info@devstudio.com" class="contact-menu-link link">
+              <svg class="contact-menu-icon" width="16px" height="12px">
                 <use href="./img/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link contact">
-              <svg class="contact-icon" width="10px" height="16px">
+          <li class="contact-menu-item">
+            <a href="tel:+380961111111" class="contact-menu-link link">
+              <svg class="contact-menu-icon" width="10px" height="16px">
                 <use href="./img/symbol-defs.svg#icon-tel"></use>
               </svg>
               +380961111111</a
@@ -317,6 +327,7 @@
         </div>
       </section>
     </main>
+    <!-- Футер -->
     <footer class="footer">
       <div class="conteiner parts">
         <div class="part">
@@ -392,20 +403,25 @@
             </li>
           </ul>
         </div>
-        <form class="footer-form">
-          <label for="">
-            <p class="footer-proposal">Подпишитесь на рассылку</p>
-            <input type="email" class="footer-input" name="mail" placeholder="E-mail">
+        <!-- footerform -->
+        <form class="footer-form" autocomplete="off">
+          <label>
+            <b class="footer-form__offer">Подпишитесь на рассылку</b>
+            <input
+              type="email"
+              class="footer-input"
+              name="mail"
+              placeholder="E-mail"
+            />
           </label>
-          <button type="submit" class="footer-btn-submit">Подписаться
-          <svg class="footer-form-icon" width="24" height="24">
-           <use href="./img/symbol-defs.svg#icon-icon-send"></use>
-          </svg>
+          <button type="submit" class="footer-btn-submit">
+            Подписаться
+            <svg class="footer-form-icon" width="24" height="24">
+              <use href="./img/symbol-defs.svg#icon-icon-send"></use>
+            </svg>
           </button>
-          
         </form>
       </div>
-     
     </footer>
   </body>
 </html>

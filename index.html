@@ -15,45 +15,53 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="page-header line">
-      <div class="conteiner line header-conteiner">
+    <!--===================HEADER================-->
+    <header class="header line">
+      <div class="conteiner header-conteiner">
         <!-- logo -->
-        <a href="./" class="logo">Web<span class="studio">studio</span></a>
-        <!-- навигация -->
-        <nav class="nav">
-          <ul class="site-nav list">
-            <li class="item">
-              <a href="./index.html" class="link current current-link"
+        <a href="./" class="logo"
+          >Web<span class="logo-accent-text">studio</span></a
+        >
+        <!-- nav -->
+        <nav class="site-nav">
+          <ul class="site-nav-menu list">
+            <li class="site-nav-item">
+              <a
+                href="./index.html"
+                class="link site-nav-link current current-link"
                 >Студия</a
               >
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link current-link">
+            <li class="site-nav-item">
+              <a
+                href="./portfolio.html"
+                class="link site-nav-link current-link"
+              >
                 Портфолио</a
               >
             </li>
-            <li class="item">
-              <a href="" class="link current-link">Контакты</a>
+            <li class="site-nav-item">
+              <a href="" class="link site-nav-link current-link">Контакты</a>
             </li>
           </ul>
         </nav>
-
-        <ul class="contact-header list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link contact">
-              <svg class="contact-icon" width="16px" height="12px">
+        <!-- contacts -->
+        <ul class="contact-menu list">
+          <li class="contact-menu-item">
+            <a href="mailto:info@devstudio.com" class="contact-menu-link link">
+              <svg class="contact-menu-icon" width="16px" height="12px">
                 <use href="./img/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link contact">
-              <svg class="contact-icon" width="10px" height="16px">
+          <li class="contact-menu-item">
+            <a href="tel:+380961111111" class="contact-menu-link link">
+              <svg class="contact-menu-icon" width="10px" height="16px">
                 <use href="./img/symbol-defs.svg#icon-tel"></use>
               </svg>
               +380961111111</a
@@ -63,7 +71,7 @@
       </div>
     </header>
     <main>
-      <!-- main -->
+      <!-- =============HERO==================== -->
       <section class="hero">
         <div class="conteiner">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
@@ -72,7 +80,7 @@
           </button>
         </div>
 
-        <!-- about us -->
+        <!-- ===============FEATURES================ -->
       </section>
       <section class="section about">
         <div class="conteiner">
@@ -130,7 +138,7 @@
           </ul>
         </div>
       </section>
-      <!-- Чем мы занимаемся -->
+      <!-- ============DEVELOPMENTS============== -->
       <section class="section">
         <div class="conteiner">
           <h2 class="section-title">Чем мы занимаемся</h2>
@@ -177,7 +185,7 @@
           </ul>
         </div>
       </section>
-      <!-- team -->
+      <!-- ============TEAM============ -->
       <section class="section team">
         <div class="conteiner">
           <h2 class="section-title">Наша команда</h2>
@@ -445,7 +453,7 @@
           </ul>
         </div>
       </section>
-      <!-- Постоянные клиенты -->
+      <!-- =============REGULAR CUSTOMERS====================== -->
       <section class="section">
         <div class="conteiner">
           <h2 class="section-title">Постоянные клиенты</h2>
@@ -526,7 +534,7 @@
         </div>
       </section>
     </main>
-    <!-- Футер -->
+    <!-- ==============FOOTER======================= -->
     <footer class="footer">
       <div class="conteiner parts">
         <div class="part">
@@ -602,7 +610,7 @@
             </li>
           </ul>
         </div>
-        <!-- футер -->
+        <!-- footerform -->
         <form class="footer-form" autocomplete="off">
           <label>
             <b class="footer-form__offer">Подпишитесь на рассылку</b>
@@ -622,7 +630,7 @@
         </form>
       </div>
     </footer>
-    <!-- modal window -->
+    <!-- ==============MODAL WINDOW=============== -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="button-close" data-modal-close>

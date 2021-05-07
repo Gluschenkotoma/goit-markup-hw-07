@@ -1,0 +1,38 @@
+.picture.list {
+  display: flex;
+}
+
+.picture {
+  position: relative;
+}
+
+.picture.list > .picture + .picture {
+  margin-left: 30px;
+}
+.image-thumb {
+  position: relative;
+}
+.text-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+
+  background-color: var(--bgc-position);
+}
+
+.text-thumb-content {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+
+  font-weight: 700;
+  line-height: 1.14;
+  color: var(--title-text-color);
+  text-transform: uppercase;
+}
