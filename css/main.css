@@ -101,6 +101,23 @@ img {
   padding-bottom: 94px;
 }
 
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.17;
+  margin-bottom: var(--margin);
+}
+
+.subtitle {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-list__item .subtitle {
+  margin-bottom: 10px;
+}
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,6 +218,45 @@ nav {
 .contact-menu__icon {
   fill: currentColor;
   margin-right: 8px;
+}
+
+.network-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--icon-color);
+  background-color: var(--title-text-color);
+}
+
+.network-list > .network-list__item + .network-list__item {
+  margin-left: 10px;
+}
+
+.network-list__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  -webkit-transition: color var(--transit-time) var(--timing), background-color var(--transit-time) var(--timing);
+  transition: color var(--transit-time) var(--timing), background-color var(--transit-time) var(--timing);
+}
+
+.network-list__link:hover, .network-list__link:focus {
+  color: var(--title-text-color);
+  background-color: var(--accent-text-color);
+}
+
+/* картинка свг */
+.network-list__icon {
+  fill: currentColor;
 }
 
 .backdrop {
@@ -452,38 +508,25 @@ nav {
   cursor: pointer;
 }
 
-.section.about {
+.section.features {
   padding-bottom: 0;
 }
 
-.section-title {
-  text-align: center;
-  font-size: 36px;
-  line-height: 1.17;
-  margin-bottom: var(--margin);
-}
-
-.title {
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
-.descrption {
+.features-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.descrption > .list-item + .list-item {
+.features-list > .features-list__item + .features-list__item {
   margin-left: 30px;
 }
 
-.list-item {
+.features-list__item {
   width: 270px;
 }
 
-.features {
+.features-list__image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -501,53 +544,31 @@ nav {
   border-radius: 4px;
 }
 
-.list-item .text {
+.features-description {
+  color: var(--additional-text-color);
+  line-height: 1.7;
   margin-bottom: 0;
 }
 
-.list-item .title {
-  margin-bottom: 10px;
-}
-
-.text {
-  color: var(--additional-text-color);
-  line-height: 1.7;
-}
-
-.list .text-name,
-.title-name {
-  font-size: 16px;
-  line-height: 1.17;
-}
-
-.title-name {
-  font-weight: 500;
-}
-
-.text-name {
-  margin-bottom: 16px;
-  color: var(--additional-text-color);
-}
-
-.picture.list {
+.develop-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.picture {
-  position: relative;
-}
-
-.picture.list > .picture + .picture {
+.develop-list > .develop-list__item + .develop-list__item {
   margin-left: 30px;
 }
 
-.image-thumb {
+.develop-list__item {
   position: relative;
 }
 
-.text-thumb {
+.develop-list__image {
+  position: relative;
+}
+
+.develop-list__thumb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -565,11 +586,7 @@ nav {
   background-color: var(--bgc-position);
 }
 
-.text-thumb-content {
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+.develop-list__content {
   font-weight: 700;
   line-height: 1.14;
   color: var(--title-text-color);
@@ -577,11 +594,21 @@ nav {
 }
 
 /* team */
-.team {
+.command {
   background-color: var(--third-bg-color);
 }
 
-.worker {
+.team-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team-list > .team-list__item + .team-list__item {
+  margin-left: 30px;
+}
+
+.team {
   -webkit-box-shadow: var(--card-shadow);
           box-shadow: var(--card-shadow);
   border-bottom-left-radius: 4px;
@@ -589,7 +616,7 @@ nav {
   background-color: white;
 }
 
-.name-position {
+.team__thumb {
   margin-left: 32px;
   margin-right: 32px;
   padding-top: var(--card-set-gap);
@@ -597,52 +624,23 @@ nav {
   text-align: center;
 }
 
-.name-position .title-name {
+.team__thumb .team__name {
   margin-bottom: 10px;
 }
 
-/* соцсети */
-/* список соцсетей */
-.network-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: var(--icon-color);
-  background-color: var(--title-text-color);
-  outline: 1px solid tomato;
+.team__name,
+.team__position {
+  font-size: 16px;
+  line-height: 1.17;
 }
 
-.network-list > .network-list-item + .network-list-item {
-  margin-left: 10px;
+.team__name {
+  font-weight: 500;
 }
 
-/* ссылка на соцсеть */
-.network-list .network {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  -webkit-transition: color var(--transit-time) var(--timing), background-color var(--transit-time) var(--timing);
-  transition: color var(--transit-time) var(--timing), background-color var(--transit-time) var(--timing);
-}
-
-.network-list .network:hover,
-.network-list .network:focus {
-  color: var(--title-text-color);
-  background-color: var(--accent-text-color);
-}
-
-/* картинка свг */
-.network-icon {
-  fill: currentColor;
+.team__position {
+  margin-bottom: 16px;
+  color: var(--additional-text-color);
 }
 
 .regular-customers {
@@ -655,7 +653,7 @@ nav {
   margin-left: calc(-1 * var(--card-set-gap));
 }
 
-.regular-customers .item-icon {
+.regular-customer__item {
   -ms-flex-preferred-size: calc((100% - 6 * var(--card-set-gap)) / 6);
       flex-basis: calc((100% - 6 * var(--card-set-gap)) / 6);
   width: calc((100% - 6 * var(--card-set-gap)) / 6);
@@ -663,7 +661,7 @@ nav {
   margin-left: var(--card-set-gap);
 }
 
-.icon-logo {
+.regular-customer__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -681,13 +679,12 @@ nav {
   transition: border-color var(--transit-time) var(--timing), color var(--transit-time) var(--timing);
 }
 
-.icon-logo:hover,
-.icon-logo:focus {
+.regular-customer__logo:hover, .regular-customer__logo:focus {
   border-color: var(--accent-text-color);
   color: var(--accent-text-color);
 }
 
-.customer-icon {
+.regular-customer__icon {
   fill: currentColor;
 }
 
