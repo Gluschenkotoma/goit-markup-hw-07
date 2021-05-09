@@ -319,7 +319,7 @@ nav {
   transition: transform var(--transit-time) var(--timing), -webkit-transform var(--transit-time) var(--timing);
 }
 
-.button-close {
+.modal__btn-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -341,31 +341,32 @@ nav {
   transition: fill var(--transit-time) var(--timing);
 }
 
-.button-close:hover, .button-close:focus {
+.modal__btn-close:hover,
+.modal__btn-close:focus {
   fill: var(--accent-text-color);
   cursor: pointer;
 }
 
-.button-closse .icon-modal {
+.modal__icon {
   width: 14px;
   height: 14px;
   fill: currentColor;
 }
 
-.proposal {
+.form__offer {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   margin-bottom: 12px;
 }
 
-.form-field {
+.form__field {
   position: relative;
   display: block;
   margin-bottom: 10px;
 }
 
-.form-label {
+.form__label {
   padding-bottom: 4px;
   font-size: 12px;
   line-height: 1.16px;
@@ -373,7 +374,7 @@ nav {
   color: var(--additional-text-color);
 }
 
-.form-input {
+.form__input {
   width: 100%;
   padding-left: 40px;
   height: 40px;
@@ -383,24 +384,24 @@ nav {
   transition: border-color var(--transit-time) var(--timing), fill var(--transit-time) var(--timing);
 }
 
-.form-input:hover, .form-input:focus {
+.form__input:hover, .form__input:focus {
   border-color: var(--accent-text-color);
   cursor: pointer;
   outline: none;
 }
 
-.form-icon {
+.form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
 }
 
-.form-input:hover + .form-icon,
-.form-input:focus + .form-icon {
+.form__input:hover + .form__icon,
+.form__input:focus + .form__icon {
   fill: var(--accent-text-color);
 }
 
-.textarea {
+.form__textarea {
   display: block;
   resize: none;
   width: 100%;
@@ -417,13 +418,13 @@ nav {
   transition: border-color var(--transit-time) var(--timing);
 }
 
-.textarea:hover, .textarea:focus {
+.form__textarea:hover, .form__textarea:focus {
   border-color: var(--accent-text-color);
   cursor: pointer;
   outline: none;
 }
 
-.label {
+.form__chackbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,23 +435,23 @@ nav {
   color: var(--additional-text-color);
 }
 
-.icon-checkbox {
+.form__checkbox-icon {
   display: inline-block;
   border: 2px solid var(--main-text-color);
   border-radius: 4px;
   margin-right: 9px;
 }
 
-.checkbox:checked + .icon-checkbox {
+.form__checkbox-hidden:checked + .form__checkbox-icon {
   background-color: var(--accent-text-color);
   border: none;
 }
 
-.form-link {
+.form__checkbox-link {
   color: var(--accent-text-color);
 }
 
-.btn-submit {
+.form__btn-submit {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -743,8 +744,7 @@ nav {
   transition: color var(--transit-time) var(--timing);
 }
 
-.address__link:hover,
-.address__link:focus {
+.address__link:hover, .address__link:focus {
   color: var(--accent-text-color);
 }
 
@@ -782,13 +782,17 @@ nav {
   background-color: var(--accent-text-color);
 }
 
+.network-list-footer__icon {
+  fill: currentColor;
+}
+
 /* footer form */
 .footer-form {
   display: block;
   margin-left: auto;
 }
 
-.footer-form__offer {
+.footer-form__label {
   display: block;
   color: var(--title-text-color);
   font-weight: 700;
@@ -797,7 +801,7 @@ nav {
   margin-bottom: 20px;
 }
 
-.footer-input {
+.footer-form__input {
   width: 358px;
   height: 50px;
   margin-right: 12px;
@@ -810,7 +814,14 @@ nav {
   background-color: var(--bgc-color);
 }
 
-.footer-btn-submit {
+.footer-form__icon {
+  position: absolute;
+  right: 28px;
+  top: 13px;
+  bottom: 13px;
+}
+
+.footer-form__btn {
   position: relative;
   width: 200px;
   padding: 10px 62px 10px 29px;
@@ -825,16 +836,5 @@ nav {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-}
-
-.footer-form-icon {
-  position: absolute;
-  right: 28px;
-  top: 13px;
-  bottom: 13px;
-}
-
-.network-icon {
-  fill: currentColor;
 }
 /*# sourceMappingURL=main.css.map */

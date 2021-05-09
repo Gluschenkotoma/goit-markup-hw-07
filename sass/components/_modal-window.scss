@@ -18,7 +18,7 @@
   transition: transform var(--transit-time) var(--timing);
 }
 
-.button-close {
+.modal__btn-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -32,14 +32,14 @@
   border-radius: 50%;
 
   transition: fill var(--transit-time) var(--timing);
-  &:hover,
-  &:focus {
-    fill: var(--accent-text-color);
-    cursor: pointer;
-  }
+}
+.modal__btn-close:hover,
+.modal__btn-close:focus {
+  fill: var(--accent-text-color);
+  cursor: pointer;
 }
 
-.button-closse .icon-modal {
+.modal__icon {
   width: 14px;
   height: 14px;
   fill: currentColor;

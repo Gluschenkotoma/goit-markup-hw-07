@@ -1,22 +1,22 @@
-.proposal {
+.form__offer {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   margin-bottom: 12px;
 }
-.form-field {
+.form__field {
   position: relative;
   display: block;
   margin-bottom: 10px;
 }
-.form-label {
+.form__label {
   padding-bottom: 4px;
   font-size: 12px;
   line-height: 1.16px;
   letter-spacing: 0.01em;
   color: var(--additional-text-color);
 }
-.form-input {
+.form__input {
   width: 100%;
   padding-left: 40px;
   height: 40px;
@@ -34,16 +34,16 @@
   }
 }
 
-.form-icon {
+.form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
-  .form-input:hover + &,
-  .form-input:focus + & {
+  .form__input:hover + &,
+  .form__input:focus + & {
     fill: var(--accent-text-color);
   }
 }
-.textarea {
+.form__textarea {
   display: block;
   resize: none;
   width: 100%;
@@ -67,27 +67,27 @@
   }
 }
 
-.label {
+.form__chackbox {
   display: flex;
   align-items: center;
   line-height: 1.71;
   color: var(--additional-text-color);
 }
-.icon-checkbox {
+.form__checkbox-icon {
   display: inline-block;
   border: 2px solid var(--main-text-color);
   border-radius: 4px;
   margin-right: 9px;
-  .checkbox:checked + & {
+  .form__checkbox-hidden:checked + & {
     background-color: var(--accent-text-color);
     border: none;
   }
 }
 
-.form-link {
+.form__checkbox-link {
   color: var(--accent-text-color);
 }
-.btn-submit {
+.form__btn-submit {
   display: block;
   margin-left: auto;
   margin-right: auto;

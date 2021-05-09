@@ -405,8 +405,7 @@ nav {
   transition: color var(--transit-time) var(--timing);
 }
 
-.address__link:hover,
-.address__link:focus {
+.address__link:hover, .address__link:focus {
   color: var(--accent-text-color);
 }
 
@@ -444,13 +443,17 @@ nav {
   background-color: var(--accent-text-color);
 }
 
+.network-list-footer__icon {
+  fill: currentColor;
+}
+
 /* footer form */
 .footer-form {
   display: block;
   margin-left: auto;
 }
 
-.footer-form__offer {
+.footer-form__label {
   display: block;
   color: var(--title-text-color);
   font-weight: 700;
@@ -459,7 +462,7 @@ nav {
   margin-bottom: 20px;
 }
 
-.footer-input {
+.footer-form__input {
   width: 358px;
   height: 50px;
   margin-right: 12px;
@@ -472,7 +475,14 @@ nav {
   background-color: var(--bgc-color);
 }
 
-.footer-btn-submit {
+.footer-form__icon {
+  position: absolute;
+  right: 28px;
+  top: 13px;
+  bottom: 13px;
+}
+
+.footer-form__btn {
   position: relative;
   width: 200px;
   padding: 10px 62px 10px 29px;
@@ -487,16 +497,5 @@ nav {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-}
-
-.footer-form-icon {
-  position: absolute;
-  right: 28px;
-  top: 13px;
-  bottom: 13px;
-}
-
-.network-icon {
-  fill: currentColor;
 }
 /*# sourceMappingURL=portfolio.css.map */
