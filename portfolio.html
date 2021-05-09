@@ -329,94 +329,115 @@
     </main>
     <!-- Футер -->
     <footer class="footer">
-      <div class="conteiner parts">
-        <div class="part">
-          <a href="./" class="logo link"
+      <div class="conteiner footer-conteiner">
+        <div class="footer-conteiner__part">
+          <!-- <a href="./" class="logo link"
             >Web<span class="logo-studio">studio</span>
-          </a>
+          </a> -->
+          <a href="./" class="logo"
+            >Web <span class="logo__footer-text">studio</span></a
+          >
           <address class="address">
-            <ul class="list">
-              <li class="address-item">г. Киев, пр-т Леси Украинки, 26</li>
-              <li class="address-item">
-                <a href="mailto:info@devstudio.com" class="contacts-footer link"
+            <ul class="adrress__list list">
+              <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
+              <li class="address__item">
+                <a href="mailto:info@devstudio.com" class="address__link link"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="address-item">
-                <a href="tel:+38096111111" class="contacts-footer link"
+              <li class="address__item">
+                <a href="tel:+38096111111" class="address__link link"
                   >+380961111111</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="part">
-          <h3 class="title">Присоединяйтесь</h3>
+        <div class="footer-conteiner__part">
+          <h3 class="subtitle">Присоединяйтесь</h3>
+          <!-- footer-sociallinks -->
           <ul class="list network-list-footer">
-            <li class="network-list-item">
+            <li class="network-list-footer__item">
               <a
-                class="link network-footer"
+                class="link network-list-footer__link"
                 href="#"
                 target="_blank"
                 rel="noopener noreferre"
               >
-                <svg class="network-icon" width="20px" height="20px">
+                <svg
+                  class="network-list-footer__icon"
+                  width="20px"
+                  height="20px"
+                >
                   <use href="./img/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="network-list-item">
+            <li class="network-list-footer__item">
               <a
-                class="link network-footer"
+                class="link network-list-footer__link"
                 href="#"
                 target="_blank"
                 rel="noopener noreferre"
               >
-                <svg class="network-icon" width="20px" height="20px">
+                <svg
+                  class="network-list-footer__icon"
+                  width="20px"
+                  height="20px"
+                >
                   <use href="./img/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="network-list-item">
+            <li class="network-list-footer__item">
               <a
-                class="link network-footer"
+                class="link network-list-footer__link"
                 href="#"
                 target="_blank"
                 rel="noopener noreferre"
               >
-                <svg class="network-icon" width="20px" height="20px">
+                <svg
+                  class="network-list-footer__icon"
+                  width="20px"
+                  height="20px"
+                >
                   <use href="./img/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="network-list-item">
+            <li class="network-list-footer__item">
               <a
-                class="link network-footer"
+                class="link network-list-footer__link"
                 href="#"
                 target="_blank"
                 rel="noopener noreferre"
               >
-                <svg class="network-icon" width="20px" height="20px">
+                <svg
+                  class="network-list-footer__icon"
+                  width="20px"
+                  height="20px"
+                >
                   <use href="./img/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
+
         <!-- footerform -->
         <form class="footer-form" autocomplete="off">
           <label>
-            <b class="footer-form__offer">Подпишитесь на рассылку</b>
+            <b class="footer-form__label">Подпишитесь на рассылку</b>
             <input
               type="email"
-              class="footer-input"
+              class="footer-form__input"
               name="mail"
               placeholder="E-mail"
             />
           </label>
-          <button type="submit" class="footer-btn-submit">
+          <button type="submit" class="footer-form__btn">
             Подписаться
-            <svg class="footer-form-icon" width="24" height="24">
+            <svg class="footer-form__icon" width="24" height="24">
               <use href="./img/symbol-defs.svg#icon-icon-send"></use>
             </svg>
           </button>

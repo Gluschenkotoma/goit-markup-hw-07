@@ -106,6 +106,21 @@ img {
   padding-bottom: 94px;
 }
 
+.subtitle {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-list__item .subtitle {
+  margin-bottom: 10px;
+}
+
+.footer-conteiner__part .subtitle {
+  color: var(--title-text-color);
+  margin-bottom: 20px;
+}
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -403,10 +418,6 @@ nav {
   color: var(--adress-text);
   -webkit-transition: color var(--transit-time) var(--timing);
   transition: color var(--transit-time) var(--timing);
-}
-
-.address__link:hover, .address__link:focus {
-  color: var(--accent-text-color);
 }
 
 .network-list-footer {

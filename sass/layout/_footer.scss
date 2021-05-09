@@ -30,10 +30,6 @@
 .address__link {
   color: var(--adress-text);
   transition: color var(--transit-time) var(--timing);
-  &:hover,
-  &:focus {
-    color: var(--accent-text-color);
-  }
 }
 // netwotk list
 .network-list-footer {

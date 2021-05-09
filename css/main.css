@@ -341,16 +341,9 @@ nav {
   transition: fill var(--transit-time) var(--timing);
 }
 
-.modal__btn-close:hover,
-.modal__btn-close:focus {
+.modal__btn-close:hover, .modal__btn-close:focus {
   fill: var(--accent-text-color);
   cursor: pointer;
-}
-
-.modal__icon {
-  width: 14px;
-  height: 14px;
-  fill: currentColor;
 }
 
 .form__offer {
@@ -742,10 +735,6 @@ nav {
   color: var(--adress-text);
   -webkit-transition: color var(--transit-time) var(--timing);
   transition: color var(--transit-time) var(--timing);
-}
-
-.address__link:hover, .address__link:focus {
-  color: var(--accent-text-color);
 }
 
 .network-list-footer {
