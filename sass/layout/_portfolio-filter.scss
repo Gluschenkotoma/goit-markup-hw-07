@@ -1,0 +1,31 @@
+/* portfolio */
+.filter {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+  & > .filter__item + .filter__item {
+    margin-left: 8px;
+  }
+}
+
+.filter__button {
+  background-color: var(--button-color);
+  border: transparent;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  cursor: pointer;
+  padding: 6px 22px;
+  border-radius: 4px;
+
+  transition: color var(--transit-time) var(--timing),
+    background-color var(--transit-time) var(--timing),
+    box-shadow var(--transit-time) var(--timing);
+  &:hover,
+  &:focus {
+    color: var(--title-text-color);
+    background-color: var(--accent-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
