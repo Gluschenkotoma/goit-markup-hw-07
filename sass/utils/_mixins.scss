@@ -1,0 +1,6 @@
+@mixin positioning($t, $r, $h, $w) {
+  top: $t;
+  right: $r;
+  height: $h;
+  width: $w;
+}

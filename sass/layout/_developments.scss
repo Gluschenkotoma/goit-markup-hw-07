@@ -12,8 +12,7 @@
   position: relative;
 }
 .develop-list__thumb {
-  display: flex;
-  align-items: center;
+  @extend %flexcentering;
   justify-content: center;
   position: absolute;
   height: 70px;

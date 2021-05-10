@@ -1,6 +1,5 @@
 .regular-customers {
-  display: flex;
-  flex-wrap: wrap;
+  @extend %flexwrap;
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
 }
