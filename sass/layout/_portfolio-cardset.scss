@@ -1,7 +1,6 @@
 // portfolio-cardset
 .card-set {
-  display: flex;
-  flex-wrap: wrap;
+  @extend %flexwrap;
   margin-left: calc(-1 * var(--card-set-gap));
   margin-top: calc(-1 * var(--card-set-gap));
 }
@@ -43,10 +42,7 @@
 
 .product__overlay-description {
   position: absolute;
-  width: 322px;
-  height: 168px;
-  top: 50%;
-  left: 50%;
+  @include position(50%, 50%, 168px, 322px);
   transform: translate(-50%, -50%);
   color: var(--title-text-color);
   font-size: 18px;
@@ -62,9 +58,10 @@
 .product__company {
   margin-bottom: 4px;
   color: var(--main-text-color);
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include font(18px, 2, 0.06em);
+  // font-size: 18px;
+  // line-height: 2;
+  // letter-spacing: 0.06em;
 }
 .product__project {
   margin-bottom: 0;

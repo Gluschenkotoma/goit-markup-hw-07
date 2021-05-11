@@ -10,3 +10,30 @@
   height: $h;
   width: $w;
 }
+@mixin font($fs, $lh, $ls) {
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+@mixin fontwsh($fw, $fs, $lh) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin fontwhs($fw, $lh, $ls) {
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin fonts($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+@mixin flexcentering() {
+  display: flex;
+  align-items: center;
+}

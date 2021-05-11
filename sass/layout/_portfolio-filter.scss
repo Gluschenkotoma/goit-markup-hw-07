@@ -1,8 +1,9 @@
 /* portfolio */
 .filter {
   display: flex;
-  margin-bottom: 50px;
   justify-content: center;
+  margin-bottom: 50px;
+
   & > .filter__item + .filter__item {
     margin-left: 8px;
   }
@@ -11,9 +12,7 @@
 .filter__button {
   background-color: var(--button-color);
   border: transparent;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
+  @include fontwsh(500, 16px, 1.6);
   cursor: pointer;
   padding: 6px 22px;
   border-radius: 4px;

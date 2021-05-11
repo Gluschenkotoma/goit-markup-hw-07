@@ -1,20 +1,16 @@
 .contact-menu {
-  display: flex;
-  align-items: center;
+  @include flexcentering;
   margin-left: auto;
   .contact-menu__item + .contact-menu__item {
     margin-left: var(--margin);
   }
 }
 .contact-menu__link {
-  display: flex;
-  align-items: center;
+  @include flexcentering;
   padding: 0;
   color: var(--icon-color);
   background-color: var(--title-text-color);
-  font-weight: 500;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
+  @include fontwhs(500, 1.17, 0.02em);
   color: var(--additional-text-color);
 
   transition: color var(--transit-time) var(--timing);

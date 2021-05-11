@@ -1,7 +1,5 @@
 .form__offer {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include fontwsh(700, 20px, 1.15);
   margin-bottom: 12px;
 }
 .form__field {
@@ -11,9 +9,8 @@
 }
 .form__label {
   padding-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.16px;
-  letter-spacing: 0.01em;
+  @include font(12px, 1.16, 0.01em);
+
   color: var(--additional-text-color);
 }
 .form__input {
@@ -49,9 +46,7 @@
   width: 100%;
   height: 120px;
   padding: 12px 16px;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
+  @include font(12px, 1.16, 0.01em);
   color: var(--form-color);
   border: var(--input-border);
   border-radius: 4px;
@@ -68,8 +63,7 @@
 }
 
 .form__chackbox {
-  display: flex;
-  align-items: center;
+  @include flexcentering();
   line-height: 1.71;
   color: var(--additional-text-color);
 }
@@ -89,8 +83,7 @@
 }
 .form__btn-submit {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  @extend %blockcentering;
   margin-top: 30px;
   padding: 10px 55px 10px 56px;
   background: #188ce8;
@@ -98,10 +91,7 @@
   border-radius: 4px;
   border-color: transparent;
   color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  @include fonts(700, 16px, 1.88, 0.06em);
   cursor: pointer;
   outline: none;
 }

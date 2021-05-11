@@ -24,12 +24,10 @@
   margin: 0;
   margin-left: auto;
   margin-right: auto;
+  // @extend %blockcentering;
   color: var(--title-text-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  @include fonts(900, 44px, 1.36, 0.06em);
   text-transform: uppercase;
-  letter-spacing: 0.06em;
 }
 /* button */
 .button {
@@ -40,13 +38,8 @@
   padding: 10px 32px;
   color: var(--title-text-color);
   background-color: var(--accent-text-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-
+  @include fonts(700, 16px, 1.88, 0.06em);
   border-radius: 4px;
   border-color: transparent;
-
   cursor: pointer;
 }

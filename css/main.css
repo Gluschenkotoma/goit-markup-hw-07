@@ -11,7 +11,7 @@
           justify-content: center;
 }
 
-.button {
+.conteiner, .form__btn-submit, .button {
   margin-left: auto;
   margin-right: auto;
 }
@@ -89,8 +89,6 @@ img {
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
   outline: 1px solid tomato;
 }
 
@@ -186,11 +184,11 @@ nav {
 
 .site-nav__link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .current {
@@ -369,7 +367,7 @@ nav {
 .form__label {
   padding-bottom: 4px;
   font-size: 12px;
-  line-height: 1.16px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--additional-text-color);
 }
@@ -453,8 +451,6 @@ nav {
 
 .form__btn-submit {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 30px;
   padding: 10px 55px 10px 56px;
   background: #188ce8;
@@ -500,8 +496,8 @@ nav {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-transform: uppercase;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 /* button */
