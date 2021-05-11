@@ -12,9 +12,7 @@
   width: 270px;
 }
 .features-list__image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flexcentering;
   background-color: var(--third-bg-color);
   margin-bottom: var(--card-set-gap);
   width: 270px;

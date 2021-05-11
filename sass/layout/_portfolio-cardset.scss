@@ -31,11 +31,7 @@
 }
 .product__overlay {
   position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-
+  @include positioning(0, 0, 100%, 100%);
   background-color: var(--bgc-position-portfolio);
   transform: translateY(100%);
   transition: transform var(--transit-time) var(--timing);

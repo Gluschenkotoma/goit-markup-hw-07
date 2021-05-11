@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.develop-list__thumb {
+.network-list__link, .modal__btn-close, .features-list__image, .develop-list__thumb, .regular-customer__logo, .network-list-footer__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,7 +11,7 @@
           justify-content: center;
 }
 
-.hero-title, .button {
+.button {
   margin-left: auto;
   margin-right: auto;
 }
@@ -272,15 +272,6 @@ nav {
 }
 
 .network-list__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -302,8 +293,8 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
   height: 100vh;
+  width: 100vw;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   -webkit-transition: opacity var(--transit-time) var(--timing), visibility var(--transit-time) var(--timing), -webkit-transform var(--transit-time) var(--timing);
@@ -348,15 +339,6 @@ nav {
   position: absolute;
   top: 8px;
   right: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 30px;
   height: 30px;
   background-color: var(--title-text-color);
@@ -512,6 +494,8 @@ nav {
   text-align: center;
   max-width: 696px;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--title-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -556,15 +540,6 @@ nav {
 }
 
 .features-list__image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background-color: var(--third-bg-color);
   margin-bottom: var(--card-set-gap);
   width: 270px;
@@ -597,9 +572,6 @@ nav {
 }
 
 .develop-list__thumb {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: absolute;
   height: 70px;
   width: 100%;
@@ -679,15 +651,6 @@ nav {
 }
 
 .regular-customer__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   color: var(--icon-color);
   border: 1px solid var(--icon-color);
   border-radius: 4px;
@@ -759,15 +722,6 @@ nav {
 }
 
 .network-list-footer__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;

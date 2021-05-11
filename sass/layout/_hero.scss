@@ -18,11 +18,12 @@
   background-size: cover;
 }
 .hero-title {
-  @extend %blockcentering;
   display: block;
   text-align: center;
   max-width: 696px;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--title-text-color);
   font-weight: 900;
   font-size: 44px;

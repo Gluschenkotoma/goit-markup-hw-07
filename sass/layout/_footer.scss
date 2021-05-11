@@ -42,9 +42,7 @@
 }
 
 .network-list-footer__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flexcentering;
   width: 44px;
   height: 44px;
   border-radius: 50%;
