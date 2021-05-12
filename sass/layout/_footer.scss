@@ -5,17 +5,18 @@
   background-color: #2f303a;
 }
 
-.footer-conteiner {
+.footer-container {
   display: flex;
   flex-wrap: wrap;
 }
-.footer-conteiner > .footer-conteiner__part + .footer-conteiner__part {
+
+.footer-container__part {
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+}
+.footer-container__part:nth-child(2n) {
   margin-left: var(--card-set-gap);
 }
 
-.footer-conteiner__part {
-  flex-basis: calc(100% / 4 - var(--card-set-gap));
-}
 // Address
 .address {
   margin-top: 20px;

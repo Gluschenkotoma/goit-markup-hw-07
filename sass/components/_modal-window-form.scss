@@ -35,6 +35,7 @@
   position: absolute;
   top: 50%;
   left: 12px;
+
   .form__input:hover + &,
   .form__input:focus + & {
     fill: var(--accent-text-color);
@@ -72,6 +73,7 @@
   border: 2px solid var(--main-text-color);
   border-radius: 4px;
   margin-right: 9px;
+
   .form__checkbox-hidden:checked + & {
     background-color: var(--accent-text-color);
     border: none;
